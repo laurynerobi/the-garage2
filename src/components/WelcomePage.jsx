@@ -7,7 +7,9 @@ function WelcomePage() {
 
   const handleClick = () => {
     // Redirect to profile setup page or perform any other navigation logic
-    navigate('/profile'); // Use navigate function for navigation
+    //navigate('/profile'); // Use navigate function for navigation
+    navigate('/Signup'); // Use navigate function for navigation
+
   };
 
   return (

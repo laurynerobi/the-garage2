@@ -1,27 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import '../styles/Signup.css';
-import quoteIcon from './Assets/quote.png'; // Import the image
+// import quoteIcon from '../../public/quote.png'; // Import the image
 
 //The text will appear with a typing effect
-const Signup = () => {
+
+const Signup = ({signup}) => {
     const fullText = `Life is too hard. That's why we have dedicated our lives, to make it easier for you.`;
+    const words = useMemo(() => fullText.split(" "), []); // Memoize the array
+
     const [text, setText] = useState('');
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
-        if (index < fullText.length) {
+        if (index < words.length) {
             const timeout = setTimeout(() => {
-                setText((prev) => prev + fullText[index]);
+                setText((prev) => prev + (prev ? " " : "") + words[index]);
                 setIndex((prev) => prev + 1);
-            }, 40); //typing speed 
+            }, 280); // typing speed
             return () => clearTimeout(timeout);
         }
-    }, [index, fullText]);
+    }, [index, words]);
 
     return (
         <div className="signup-page">
             <div className="quote-box">
-                <img src={quoteIcon} alt="Quote Icon" className="quote-icon-img" />
+                {/* <img src={quoteIcon} alt="Quote Icon" className="quote-icon-img" /> */}
                 <div className="quote-text">{text}</div>
             </div>
 

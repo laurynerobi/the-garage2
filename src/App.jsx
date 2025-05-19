@@ -12,8 +12,8 @@ function App() {
     <Router>
       <div className="app-container">
         <Routes>
-          <Route path="/" element={<SignupPage />} />
-          {/* <Route path="/" element={<WelcomePage />} /> */}
+          <Route path="/" element={<WelcomePage />} />
+          <Route path="/signup" element={<SignupPage />} />
           <Route path="/profile" element={<ProfileForm />} />
           <Route path="/jobs" element={<JobListings />} />
         </Routes>

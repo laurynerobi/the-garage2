@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
 body {
   margin: 0;
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,8 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   height: 100vh;
-  color: #0B090C;
-  background: #E2F3F3;
+  background:#FFF5ED;
 }
 
 code {
