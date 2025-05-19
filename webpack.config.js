@@ -24,6 +24,10 @@ module.exports = {
         test: /\.css$/, // Apply this rule to .css files
         use: ['style-loader', 'css-loader'], // Use style-loader and css-loader
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i, //Apply this rule to images 
+        type: 'asset/resource',
+      },
     ],
   },
   resolve: {
