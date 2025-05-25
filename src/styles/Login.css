@@ -1,0 +1,71 @@
+/* login.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #FFF5ED;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #FFF5ED;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.container {
+  background: #FFC299;
+  padding: 2.5rem 2rem;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF6B35;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65c28;
+}
+
+h2 {
+  color: #444;
+}
